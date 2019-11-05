@@ -1,1 +1,64 @@
-<p>profile works!</p>
+<form class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="Username" class="sr-only">Username</label>
+          <input type="text" class="form-control" id="Username" placeholder="Github Username" name="username" [(ngModel)]="username" (keyup)="findprofile()">
+        </div>
+        
+      </form>
+
+
+
+<div *ngIf="profile">
+
+    <div class="container">
+  
+      <div class="card">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="profile Image">
+  
+          </div>
+          <div class="col-md-4">
+              <ul class="list-group">
+                <li class="list-group-item" *ngIf="profile.bio">{{profile.name}}</li>
+                <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+                <li class="list-group-item" *ngIf="profile.bio">{{profile.email}}</li>
+                <li class="list-group-item" *ngIf="profile.bio">{{profile.location}}</li>
+    
+              </ul>
+    
+            </div>
+            <div class="col-md-4">
+                <div>
+                  <p>
+                    <span class="badge badge-success">{{profile.followers}} Followers</span>
+                    <span class="badge badge-primary"> {{profile.followers}} Following</span>
+                    <span class="badge badge-secondary">{{profile.public_gists}} Public gists</span>
+                    <span class="badge badge-info">{{profile.public_repos}} Repos</span>
+                  </p>
+                  <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success">View profile on github</a></p>
+                </div>
+      
+                
+      
+                </div>
+      
+              </div>
+      
+              </div>
+            </div>
+          </div>
+          <div class="container">
+              <div class="repotitle">
+                <h3 class="repo-title">Repositories</h3>
+              </div>
+                <div class="card" *ngFor="let repo of repos">
+                  
+                  <div class="card-body">
+                    <h4 class="card-title">{{repo.name}}</h4>
+                    <p class="card-text">{{repo.description}}</p>
+                    <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-info">View the prooject on Github</a>
+                  </div>
+                </div>
+            </div>
+
