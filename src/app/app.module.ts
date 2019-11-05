@@ -7,12 +7,14 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProfileService } from './services/profile.service';
 import {FormsModule} from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
