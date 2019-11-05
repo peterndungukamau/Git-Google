@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { DateCountPipe } from './date-count.pipe';
 import { HoverDirective } from './hover.directive';
+import { ReposComponent } from './repos/repos.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HoverDirective } from './hover.directive';
     HeaderComponent,
     FooterComponent,
     DateCountPipe,
-    HoverDirective
+    HoverDirective,
+    ReposComponent
   ],
   imports: [
     BrowserModule,
