@@ -23,6 +23,7 @@ export class ProfileComponent implements OnInit {
       this.profileService.getProfileInfo().subscribe(profile => {
   
         this.profile = profile;
+        console.log(this.profile);
   
       });
       this.profileService.getprofileRepos().subscribe(repos => {
@@ -35,7 +36,8 @@ export class ProfileComponent implements OnInit {
     ngOnInit() {
       this.profileService.updateProfile('Peterndungukamau');
       
-      this.profileService.getProfileInfo().subscribe(profile => this.profile = profile);
+      this.profileService.getProfileInfo().subscribe(profile => {this.profile = profile;
+      console.log(profile)});
   
       this.profileService.getprofileRepos().subscribe(repos =>  this.repos = repos);
   
