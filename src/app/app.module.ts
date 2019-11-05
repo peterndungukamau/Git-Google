@@ -9,6 +9,7 @@ import {FormsModule} from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { DateCountPipe } from './date-count.pipe';
+import { HoverDirective } from './hover.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DateCountPipe } from './date-count.pipe';
     ProfileComponent,
     HeaderComponent,
     FooterComponent,
-    DateCountPipe
+    DateCountPipe,
+    HoverDirective
   ],
   imports: [
     BrowserModule,
