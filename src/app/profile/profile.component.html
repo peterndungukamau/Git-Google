@@ -17,7 +17,8 @@
       <div class="card">
         <div class="row">
           <div class="col-md-4">
-            <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="profile Image">
+            <img src="{{profile.avatar_url}}" class="img-circle img-responsive" appHover alt="profile Image">
+           
   
           </div>
           <div class="col-md-4">
@@ -28,7 +29,7 @@
                 <li class="list-group-item" *ngIf="profile.bio">{{profile.location}}</li>
     
               </ul>
-    
+            
             </div>
                 <div>
                   <p>
@@ -48,7 +49,7 @@
       
               </div>
             </div>
-        
+  
           <div class="container">
               <div class="repotitle">
                 <h3 class="repo-title">Repositories</h3>
