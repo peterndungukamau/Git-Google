@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # By Peter Ndung'u
 ​
 # Description
-This is a simple Angular application that allows you to saerch for different gihub repos using usernames with the help of an api.
+This is a simple Angular application that allows you to search for different gihub repos using usernames with the help of an api.
 ​
 # User Requirement
 The applications allows users to do the following:
@@ -15,7 +15,7 @@ The applications allows users to do the following:
 * See the projects from github
 * Go back and search for another user in github
 ​
-# Setup/Installation Requirments
+# Setup/Installation Requirements
 * Clone or download and unzip the repository from github,
 * If you have git Use this command *git clone*  to clone the project.
 ​
